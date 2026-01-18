@@ -1,0 +1,102 @@
+[
+  {
+    "instruction": "Suggest a recipe using eggs and onions",
+    "input": "I have eggs and onions",
+    "output": "Here's a delicious Onion Omelette recipe:\n\nIngredients:\n- 3 eggs\n- 1 medium onion, finely chopped\n- 2 tbsp oil or butter\n- Salt and pepper to taste\n- Optional: cheese, herbs\n\nInstructions:\n1. Heat oil in a pan over medium heat\n2. Saut\u00e9 chopped onions until golden brown (3-4 minutes)\n3. Beat eggs with salt and pepper\n4. Pour eggs over onions\n5. Cook for 2-3 minutes until bottom sets\n6. Fold omelette in half and cook for another minute\n7. Serve hot with toast or bread"
+  },
+  {
+    "instruction": "What can I make with tomatoes and pasta",
+    "input": "tomatoes, pasta",
+    "output": "Try this Classic Tomato Pasta:\n\nIngredients:\n- 200g pasta\n- 4 fresh tomatoes, diced\n- 3 cloves garlic, minced\n- 3 tbsp olive oil\n- Salt, pepper, and basil\n- Parmesan cheese (optional)\n\nInstructions:\n1. Boil pasta according to package directions\n2. Heat olive oil and saut\u00e9 garlic until fragrant\n3. Add diced tomatoes and cook for 8-10 minutes\n4. Season with salt, pepper, and fresh basil\n5. Toss with drained pasta\n6. Top with parmesan and serve"
+  },
+  {
+    "instruction": "Recipe with chicken and rice",
+    "input": "chicken, rice",
+    "output": "Here's a One-Pot Chicken Rice:\n\nIngredients:\n- 2 chicken breasts, cubed\n- 1 cup rice\n- 2 cups chicken broth\n- 1 onion, diced\n- 2 tbsp oil\n- Spices: salt, pepper, paprika\n\nInstructions:\n1. Heat oil and brown chicken pieces\n2. Remove chicken and saut\u00e9 onions\n3. Add rice and toast for 2 minutes\n4. Pour in broth, add chicken back\n5. Season with spices\n6. Cover and simmer for 20 minutes\n7. Fluff and serve hot"
+  },
+  {
+    "instruction": "What to cook with potatoes and cheese",
+    "input": "potatoes, cheese",
+    "output": "Make Cheesy Baked Potatoes:\n\nIngredients:\n- 4 medium potatoes\n- 1 cup shredded cheese\n- 2 tbsp butter\n- Salt and pepper\n- Optional: sour cream, chives\n\nInstructions:\n1. Wash and prick potatoes with fork\n2. Bake at 200\u00b0C for 45-60 minutes\n3. Cut open and mash insides slightly\n4. Add butter, cheese, salt, and pepper\n5. Return to oven for 5 minutes until cheese melts\n6. Garnish with chives and serve"
+  },
+  {
+    "instruction": "Recipe using bread and eggs",
+    "input": "bread, eggs",
+    "output": "Try French Toast:\n\nIngredients:\n- 4 bread slices\n- 2 eggs\n- 1/4 cup milk\n- 1 tsp vanilla extract\n- Butter for frying\n- Optional: cinnamon, sugar, maple syrup\n\nInstructions:\n1. Whisk eggs, milk, and vanilla\n2. Heat butter in a pan\n3. Dip bread slices in egg mixture\n4. Fry until golden on both sides (2-3 min each)\n5. Sprinkle with cinnamon sugar\n6. Serve with maple syrup"
+  },
+  {
+    "instruction": "What can I make with vegetables and noodles",
+    "input": "vegetables, noodles",
+    "output": "Here's Vegetable Stir-Fry Noodles:\n\nIngredients:\n- 200g noodles\n- Mixed vegetables (carrots, bell peppers, cabbage)\n- 2 tbsp soy sauce\n- 1 tbsp oil\n- Garlic and ginger\n- Sesame oil\n\nInstructions:\n1. Cook noodles and drain\n2. Heat oil, add garlic and ginger\n3. Stir-fry vegetables until tender-crisp\n4. Add noodles and soy sauce\n5. Toss everything together\n6. Drizzle with sesame oil and serve"
+  },
+  {
+    "instruction": "Recipe with milk and sugar",
+    "input": "milk, sugar",
+    "output": "Make Simple Milk Pudding:\n\nIngredients:\n- 2 cups milk\n- 3 tbsp sugar\n- 2 tbsp cornstarch\n- 1 tsp vanilla extract\n- Optional: cardamom, nuts\n\nInstructions:\n1. Mix cornstarch with 1/4 cup cold milk\n2. Heat remaining milk with sugar\n3. Add cornstarch mixture while stirring\n4. Cook until thickened (5-7 minutes)\n5. Add vanilla extract\n6. Pour into bowls and refrigerate\n7. Garnish with nuts before serving"
+  },
+  {
+    "instruction": "What to make with flour and water",
+    "input": "flour, water",
+    "output": "Try Basic Flatbread:\n\nIngredients:\n- 2 cups flour\n- 3/4 cup water\n- 1 tsp salt\n- 2 tbsp oil\n\nInstructions:\n1. Mix flour and salt\n2. Add water gradually and knead into smooth dough\n3. Add oil and knead for 5 minutes\n4. Divide into 6-8 balls\n5. Roll each ball into thin circles\n6. Cook on hot griddle until bubbles form\n7. Flip and cook other side\n8. Serve warm with curry or dip"
+  },
+  {
+    "instruction": "Recipe using spinach and paneer",
+    "input": "spinach, paneer",
+    "output": "Here's Palak Paneer:\n\nIngredients:\n- 200g paneer, cubed\n- 2 cups spinach\n- 1 onion, chopped\n- 2 tomatoes, pureed\n- Ginger-garlic paste\n- Spices: cumin, garam masala\n- Cream\n\nInstructions:\n1. Blanch spinach and blend to paste\n2. Saut\u00e9 onions and ginger-garlic\n3. Add tomato puree and spices\n4. Add spinach paste and cook 5 minutes\n5. Add paneer cubes\n6. Finish with cream\n7. Serve with roti or rice"
+  },
+  {
+    "instruction": "What can I cook with ground beef and beans",
+    "input": "ground beef, beans",
+    "output": "Make Beef and Bean Chili:\n\nIngredients:\n- 500g ground beef\n- 1 can kidney beans\n- 1 can diced tomatoes\n- 1 onion, diced\n- 2 cloves garlic\n- Chili powder, cumin\n- Salt and pepper\n\nInstructions:\n1. Brown ground beef in a pot\n2. Add onions and garlic, saut\u00e9\n3. Add tomatoes, beans, and spices\n4. Simmer for 30 minutes\n5. Adjust seasoning\n6. Serve with rice or cornbread"
+  },
+  {
+    "instruction": "Recipe with yogurt and cucumber",
+    "input": "yogurt, cucumber",
+    "output": "Try Cucumber Raita:\n\nIngredients:\n- 1 cup yogurt\n- 1 cucumber, grated\n- 1 tsp cumin powder\n- Salt to taste\n- Fresh mint or coriander\n- Optional: roasted cumin seeds\n\nInstructions:\n1. Grate cucumber and squeeze out excess water\n2. Whisk yogurt until smooth\n3. Add cucumber, cumin, and salt\n4. Mix well\n5. Garnish with mint leaves\n6. Chill and serve with biryani or paratha"
+  },
+  {
+    "instruction": "What to make with bananas and oats",
+    "input": "bananas, oats",
+    "output": "Here's Banana Oat Pancakes:\n\nIngredients:\n- 2 ripe bananas\n- 1 cup oats\n- 2 eggs\n- 1 tsp baking powder\n- Cinnamon\n- Honey or maple syrup\n\nInstructions:\n1. Blend oats into flour\n2. Mash bananas\n3. Mix all ingredients together\n4. Heat a non-stick pan\n5. Pour batter to make small pancakes\n6. Cook 2-3 minutes each side\n7. Serve with honey or syrup"
+  },
+  {
+    "instruction": "Recipe using fish and lemon",
+    "input": "fish, lemon",
+    "output": "Make Lemon Garlic Fish:\n\nIngredients:\n- 2 fish fillets\n- 1 lemon (juice and zest)\n- 3 cloves garlic, minced\n- 2 tbsp olive oil\n- Salt, pepper, and herbs\n- Butter\n\nInstructions:\n1. Season fish with salt and pepper\n2. Heat oil and butter in pan\n3. Add garlic and cook until fragrant\n4. Add fish fillets\n5. Cook 3-4 minutes per side\n6. Squeeze lemon juice over fish\n7. Garnish with zest and herbs"
+  },
+  {
+    "instruction": "What can I make with mushrooms and garlic",
+    "input": "mushrooms, garlic",
+    "output": "Try Garlic Butter Mushrooms:\n\nIngredients:\n- 300g mushrooms, sliced\n- 4 cloves garlic, minced\n- 3 tbsp butter\n- Salt and pepper\n- Fresh parsley\n- Optional: white wine\n\nInstructions:\n1. Heat butter in a large pan\n2. Add garlic and saut\u00e9 briefly\n3. Add mushrooms and cook until golden\n4. Season with salt and pepper\n5. Optional: add splash of white wine\n6. Garnish with fresh parsley\n7. Serve as side or on toast"
+  },
+  {
+    "instruction": "Recipe with carrots and ginger",
+    "input": "carrots, ginger",
+    "output": "Here's Carrot Ginger Soup:\n\nIngredients:\n- 4 large carrots, chopped\n- 2 inch ginger, grated\n- 1 onion, diced\n- 3 cups vegetable broth\n- 2 tbsp oil\n- Cream\n- Salt and pepper\n\nInstructions:\n1. Saut\u00e9 onions and ginger in oil\n2. Add chopped carrots\n3. Pour in broth and simmer 20 minutes\n4. Blend until smooth\n5. Add cream and season\n6. Heat through and serve\n7. Garnish with herbs or croutons"
+  },
+  {
+    "instruction": "What to cook with shrimp and vegetables",
+    "input": "shrimp, vegetables",
+    "output": "Make Shrimp Stir-Fry:\n\nIngredients:\n- 300g shrimp, peeled\n- Mixed vegetables (bell peppers, broccoli, snap peas)\n- 2 tbsp soy sauce\n- 1 tbsp oyster sauce\n- Garlic and ginger\n- 2 tbsp oil\n\nInstructions:\n1. Heat oil in wok\n2. Add garlic and ginger\n3. Stir-fry vegetables until crisp\n4. Add shrimp and cook until pink\n5. Add sauces and toss\n6. Cook for 2 more minutes\n7. Serve over rice"
+  },
+  {
+    "instruction": "Recipe using apples and cinnamon",
+    "input": "apples, cinnamon",
+    "output": "Try Baked Cinnamon Apples:\n\nIngredients:\n- 4 apples, cored and sliced\n- 2 tsp cinnamon\n- 2 tbsp brown sugar\n- 2 tbsp butter\n- Optional: vanilla ice cream\n\nInstructions:\n1. Preheat oven to 180\u00b0C\n2. Arrange apple slices in baking dish\n3. Sprinkle with cinnamon and sugar\n4. Dot with butter pieces\n5. Bake for 25-30 minutes\n6. Serve warm\n7. Top with ice cream if desired"
+  },
+  {
+    "instruction": "What can I make with tofu and soy sauce",
+    "input": "tofu, soy sauce",
+    "output": "Here's Crispy Tofu:\n\nIngredients:\n- 400g firm tofu, cubed\n- 3 tbsp soy sauce\n- 1 tbsp sesame oil\n- 2 tbsp cornstarch\n- Garlic powder\n- Green onions\n\nInstructions:\n1. Press tofu to remove excess water\n2. Cut into cubes\n3. Toss with cornstarch and garlic powder\n4. Pan-fry until crispy on all sides\n5. Add soy sauce and sesame oil\n6. Toss to coat\n7. Garnish with green onions"
+  },
+  {
+    "instruction": "Recipe with bell peppers and rice",
+    "input": "bell peppers, rice",
+    "output": "Make Stuffed Bell Peppers:\n\nIngredients:\n- 4 bell peppers\n- 1 cup cooked rice\n- 1 onion, diced\n- 1 cup tomato sauce\n- Cheese\n- Herbs and spices\n\nInstructions:\n1. Cut tops off peppers and remove seeds\n2. Mix rice with onions, half the sauce, and spices\n3. Stuff peppers with rice mixture\n4. Place in baking dish\n5. Top with remaining sauce and cheese\n6. Bake at 180\u00b0C for 30 minutes\n7. Serve hot"
+  },
+  {
+    "instruction": "What to make with peanut butter and chocolate",
+    "input": "peanut butter, chocolate",
+    "output": "Try No-Bake Peanut Butter Chocolate Balls:\n\nIngredients:\n- 1 cup peanut butter\n- 1/2 cup honey\n- 2 cups oats\n- 1/2 cup chocolate chips\n- Cocoa powder for coating\n\nInstructions:\n1. Mix peanut butter and honey\n2. Add oats and chocolate chips\n3. Refrigerate mixture for 30 minutes\n4. Roll into small balls\n5. Roll in cocoa powder\n6. Store in refrigerator\n7. Enjoy as snack or dessert"
+  }
+]
