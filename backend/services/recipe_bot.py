@@ -183,20 +183,3 @@ def get_recipe_bot(model_path: str = None) -> RecipeBot:
     if _recipe_bot_instance is None:
         _recipe_bot_instance = RecipeBot(model_path)
     return _recipe_bot_instance
-
-
-if __name__ == "__main__":
-    logger.info("Testing Recipe Bot")
-
-    bot = RecipeBot()
-
-    test_ingredients = ["chicken, rice"]
-
-    for ingredients in test_ingredients:
-        result = bot.generate_recipe(ingredients, use_fallback=True)
-
-        if result["success"]:
-            logger.info("\nGenerated Recipe:\n")
-            logger.info(result["recipe"])
-        else:
-            logger.error(f"\nError: {result['error']}")

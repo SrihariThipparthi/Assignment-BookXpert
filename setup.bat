@@ -1,55 +1,92 @@
 @echo off
 setlocal enabledelayedexpansion
 
-echo Recipe Bot Assignment Setup
+echo =========================================
+echo Book Expert - Recipe Bot Setup (Windows)
+echo =========================================
+
+REM Check if Python is installed
+echo.
+echo 1) Checking Python version...
+python --version >nul 2>&1
+if %errorlevel% neq 0 (
+    echo ERROR: Python not found!
+    echo Please install Python 3.10+ from https://www.python.org/
+    echo Make sure to check "Add Python to PATH" during installation
+    pause
+    exit /b 1
+)
+python --version
+echo.
+
+REM Remove old venv if it exists
+if exist venv (
+    echo 2) Removing existing virtual environment...
+    rmdir /s /q venv
+    echo Virtual environment cleaned up
+    echo.
+)
 
 REM Create virtual environment
-echo.
-echo Creating virtual environment...
+echo 3) Creating virtual environment...
 python -m venv venv
+if %errorlevel% neq 0 (
+    echo ERROR: Failed to create virtual environment!
+    echo Try running: python -m pip install --upgrade pip
+    pause
+    exit /b 1
+)
+echo Virtual environment created successfully
+echo.
 
 REM Activate virtual environment
-echo.
-echo Activating virtual environment...
+echo 4) Activating virtual environment...
 call venv\Scripts\activate.bat
+if %errorlevel% neq 0 (
+    echo ERROR: Failed to activate virtual environment!
+    pause
+    exit /b 1
+)
+echo Virtual environment activated
+echo.
 
 REM Upgrade pip
+echo 5) Upgrading pip...
+python -m pip install --upgrade pip --quiet
+if %errorlevel% neq 0 (
+    echo WARNING: pip upgrade had issues, continuing anyway...
+)
 echo.
-echo Upgrading pip...
-python -m pip install --upgrade pip
 
 REM Install dependencies
-echo.
-echo Installing all dependencies...
-echo    (This may take 5-10 minutes)
+echo 6) Installing dependencies (this may take 5-10 minutes)...
 pip install -r requirements.txt
-
-@REM REM Verify installation
-@REM echo.
-@REM echo Verifying installation...
-@REM python verify_installation.py
-
+if %errorlevel% neq 0 (
+    echo ERROR: Failed to install dependencies!
+    echo Check requirements.txt and your internet connection
+    pause
+    exit /b 1
+)
 echo.
-echo Starting Backend & Frontend
-
-REM Start FastAPI backend in new window
-echo Starting FastAPI backend...
-start "FastAPI Backend" cmd /k ^
-uvicorn backend.api_handler:app --host 0.0.0.0 --port 8000 --reload
-
-REM Give backend time to start
-timeout /t 60 >nul
-
-REM Start Streamlit frontend in new window
-echo Starting Streamlit frontend...
-start "Streamlit Frontend" cmd /k ^
-streamlit run frontend\app.py
-
+echo =========================================
+echo SUCCESS: Setup Complete!
+echo =========================================
 echo.
-echo Setup Complete!
+echo TO START MANUALLY IN TWO TERMINALS:
 echo.
-echo Backend   : http://localhost:8000/docs
-echo Frontend : http://localhost:8501
+echo Terminal 1 (Backend):
+echo   venv\Scripts\activate
+echo   uvicorn backend.api_handler:app --host 0.0.0.0 --port 8000 --reload
 echo.
+echo Terminal 2 (Frontend):
+echo   venv\Scripts\activate
+echo   streamlit run frontend\app.py
+echo.
+echo ONCE RUNNING, ACCESS AT:
+echo   Backend API: http://localhost:8000
+echo   API Docs:    http://localhost:8000/docs
+echo   Frontend UI: http://localhost:8501
+echo.
+echo =========================================
 echo.
 pause
