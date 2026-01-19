@@ -65,7 +65,7 @@ def check_api_health():
 
 def display_task1():
     st.markdown(
-        '<div class="task-header">📝 Task 1: Name Matching System</div>',
+        '<div class="task-header">Task 1: Name Matching System</div>',
         unsafe_allow_html=True,
     )
     st.write(
@@ -153,7 +153,7 @@ def display_task1():
 
 def display_task2():
     st.markdown(
-        '<div class="task-header">🍳 Task 2: Recipe Chatbot</div>',
+        '<div class="task-header">Task 2: Recipe Chatbot</div>',
         unsafe_allow_html=True,
     )
     st.write("Get personalized recipe suggestions based on the ingredients you have!")
@@ -169,7 +169,7 @@ def display_task2():
         )
 
     with col2:
-        st.write("")  
+        st.write("")
         st.write("")
         st.write("")
         recipe_button = st.button("Get Recipe Suggestions", use_container_width=True)
@@ -262,7 +262,7 @@ def main():
     st.sidebar.info("""
     **Task 1:** Uses fuzzy matching and semantic similarity (BERT embeddings) to find similar names.
     
-    **Task 2:** Suggests recipes based on your ingredients using either a local LLM (Ollama) or a curated recipe database.
+    **Task 2:** Suggests recipes based on your ingredients using local finetuned custom lora model.
     """)
 
     st.sidebar.divider()

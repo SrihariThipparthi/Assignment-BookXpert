@@ -14,7 +14,7 @@ NAMES_DATA_PATH = DATA_DIR / "names.json"
 RECIPES_DATA_PATH = DATA_DIR / "recipes.json"
 RECIPES_TRAINING_DATA_PATH = DATA_DIR / "recipes_training_final.json"
 
-DEVICE = "cpu" 
+DEVICE = "cpu"
 
 RECIPE_MAX_NEW_TOKENS = 150
 RECIPE_MIN_NEW_TOKENS = 50

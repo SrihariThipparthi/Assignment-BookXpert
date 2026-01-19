@@ -1,11 +1,12 @@
+import logging
 import sys
 from pathlib import Path
 
 import torch
-import logging
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
+
 
 def check_environment():
     logger.info(f"logger.info PyTorch version: {torch.__version__}")
@@ -37,7 +38,6 @@ def check_environment():
 
 
 def check_model_files():
-
     model_path = Path("recipe-bot-finetuned")
 
     if not model_path.exists():
@@ -112,7 +112,6 @@ def test_model_loading():
 
 
 def test_inference(model, tokenizer):
-
     test_cases = [
         "eggs, onions",
         "tomatoes, pasta",
@@ -164,7 +163,6 @@ def test_inference(model, tokenizer):
 
 
 def main():
-
     if not check_environment():
         logger.info("logger.infoEnvironment check failed!")
         logger.info("Please install missing packages and try again.")
