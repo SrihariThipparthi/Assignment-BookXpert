@@ -1,9 +1,20 @@
 import logging
-from pathlib import Path
 
 import torch
 from peft import PeftModel
 from transformers import AutoModelForCausalLM, AutoTokenizer
+
+from ..config import (
+    DEVICE,
+    RECIPE_BOT_BASE_MODEL,
+    RECIPE_BOT_MODEL_PATH,
+    RECIPE_MAX_NEW_TOKENS,
+    RECIPE_MIN_NEW_TOKENS,
+    RECIPE_REPETITION_PENALTY,
+    RECIPE_TEMPERATURE,
+    RECIPE_TOP_K,
+    RECIPE_TOP_P,
+)
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -12,14 +23,13 @@ logger = logging.getLogger(__name__)
 class RecipeBot:
     def __init__(self, model_path: str = None):
         if model_path is None:
-            script_dir = Path(__file__).parent
-            model_path = str(script_dir / "recipe-bot-finetuned")
+            model_path = RECIPE_BOT_MODEL_PATH
 
         self.model_path = model_path
-        self.base_model_name = "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
+        self.base_model_name = RECIPE_BOT_BASE_MODEL
         self.model = None
         self.tokenizer = None
-        self.device = "cpu"
+        self.device = DEVICE
         self.load_model()
 
     def load_model(self):
@@ -88,13 +98,13 @@ class RecipeBot:
             with torch.no_grad():
                 outputs = self.model.generate(
                     **inputs,
-                    max_new_tokens=150,  # org 400
-                    min_new_tokens=50,
-                    temperature=0.7,
+                    max_new_tokens=RECIPE_MAX_NEW_TOKENS,
+                    min_new_tokens=RECIPE_MIN_NEW_TOKENS,
+                    temperature=RECIPE_TEMPERATURE,
                     do_sample=True,
-                    top_p=0.9,
-                    top_k=50,
-                    repetition_penalty=1.2,
+                    top_p=RECIPE_TOP_P,
+                    top_k=RECIPE_TOP_K,
+                    repetition_penalty=RECIPE_REPETITION_PENALTY,
                     pad_token_id=self.tokenizer.eos_token_id,
                     eos_token_id=self.tokenizer.eos_token_id,
                 )

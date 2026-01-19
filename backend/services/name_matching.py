@@ -6,12 +6,15 @@ import numpy as np
 from fuzzywuzzy import fuzz
 from sentence_transformers import SentenceTransformer, util
 
-logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(__name__)
+from ..config import (
+    LOG_LEVEL,
+    NAME_MATCHER_DEVICE,
+    NAME_MATCHER_MODEL,
+    NAMES_DATA_PATH,
+)
 
-os.environ["HF_HUB_DOWNLOAD_TIMEOUT"] = "600"
-os.environ["HF_HUB_DISABLE_SYMLINKS_WARNING"] = "1"
-os.environ["HF_HUB_DISABLE_PROGRESS_BARS"] = "1"
+logging.basicConfig(level=LOG_LEVEL)
+logger = logging.getLogger(__name__)
 
 
 class NameMatcher:
@@ -19,9 +22,7 @@ class NameMatcher:
         self.names = self._load_names()
 
         logger.info("Loading semantic similarity model...")
-        self.model = SentenceTransformer(
-            "sentence-transformers/paraphrase-MiniLM-L3-v2", device="cpu"
-        )
+        self.model = SentenceTransformer(NAME_MATCHER_MODEL, device=NAME_MATCHER_DEVICE)
 
         logger.info("Pre-computing name embeddings...")
         self.name_embeddings = self.model.encode(
@@ -30,7 +31,7 @@ class NameMatcher:
         logger.info(f"Loaded {len(self.names)} names with embeddings")
 
     def _load_names(self):
-        data_path = os.path.join(os.path.dirname(__file__), "data", "names.json")
+        data_path = str(NAMES_DATA_PATH)
 
         if not os.path.exists(data_path):
             os.makedirs(os.path.dirname(data_path), exist_ok=True)
