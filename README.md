@@ -13,9 +13,9 @@ This project demonstrates:
 - **Production Ready**: Dockerized deployment with CORS support
 
 **Key Features:**
-- Find similar names from a curated dataset using intelligent matching algorithms
-- Generate personalized recipes based on available ingredients
-- Real-time chat interface with streaming responses
+- Find similar names from a curated dataset using intelligent matching algorithms (sub-second response)
+- Generate personalized recipes based on available ingredients (150-200 seconds per recipe on CPU)
+- Chat interface with LoRA fine-tuned LLM
 - Lightweight LoRA adaptation (only ~0.1% of model parameters trainable)
 
 ---
@@ -259,14 +259,6 @@ streamlit run frontend/app.py
 
 ## 🤖 LoRA Model Details
 
-### What is LoRA?
-
-**LoRA (Low-Rank Adaptation)** is an efficient fine-tuning technique that:
-- Freezes the base model weights
-- Adds small trainable "adapter" layers
-- Reduces trainable parameters by 99.9%
-- Maintains model quality while reducing memory and time
-
 ### Model Architecture
 
 ```
@@ -320,7 +312,7 @@ Model Size: ~4.2 MB (adapter only)
 - Generates contextually relevant recipes
 - Adapts tone to ingredient-based queries
 - Memory efficient (runs on CPU)
-- Fast inference (~2-3 seconds per recipe)
+- Works on CPU hardware (no GPU required)
 
 ⚠️ **Limitations:**
 - **Small Training Set**: Only 20 samples limits diversity
@@ -338,7 +330,7 @@ Model Size: ~4.2 MB (adapter only)
 |--------|-------|
 | **Final Training Loss** | 0.50 |
 | **Model Size** | ~4.2 MB |
-| **Inference Time** | ~2-3 seconds/recipe |
+| **Inference Time** | 150-200 seconds/recipe (CPU-based) |
 | **Context Window** | 512 tokens |
 | **Supported Languages** | English |
 | **Recipe Generation Success Rate** | ~85% |
@@ -561,7 +553,8 @@ curl -X POST "http://localhost:8000/api/generate-recipe" \
 ## 🚀 Performance Tips
 
 1. **First Run**: Model loading takes 30-60 seconds (one-time)
-2. **Subsequent Runs**: Fast inference (<3 seconds)
+2. **Recipe Generation**: 150-200 seconds per request (CPU-based inference)
+3. **Name Matching**: <1 second per request (semantic search)
 3. **CPU Mode**: Works fine for this model size
 4. **GPU Mode**: Uncomment GPU settings in `config.py` for faster inference
 5. **Batch Processing**: Group requests to reduce overhead
